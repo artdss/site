@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição do site para motores de busca.">
+    <meta name="author" content="Seu Nome">
+    <title>Meu Site Completo</title>
+    <style>
+        /* Estilos Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+        /* Botões */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        /* Cabeçalho */
+        header {
+            background-color: #333;
+            padding: 10px 0;
+            color: #fff;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header .logo img {
+            height: 50px;
+        }
+        header .menu {
+            display: flex;
+            list-style: none;
+        }
+        header .menu li {
+            margin-left: 20px;
+        }
+        header .menu a {
+            color: #fff;
+            font-weight: bold;
+        }
+        /* Banner */
+        .banner {
+            background: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .banner h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .banner p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        /* Seção Sobre */
+        .about {
+            padding: 50px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+        .about img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        /* Seção Serviços */
+        .services {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+        }
+        .services .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .services .service-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 30%;
+        }
+        .services .service-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .services .service-item h3 {
+            margin: 15px 0 10px;
+            font-size: 1.5rem;
+        }
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer .social-media {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+        footer .social-media li {
+            margin: 0 10px;
+        }
+        footer .social-media a {
+            color: #fff;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="https://via.placeholder.com/150x50" alt="Logotipo do Site">
+            </a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner" id="home">
+        <h1>Bem-vindo ao Meu Site</h1>
+        <p>Soluções que transformam o seu negócio.</p>
+        <a href="#about" class="btn">Saiba Mais</a>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section class="about" id="about">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma equipe dedicada a oferecer soluções personalizadas para nossos clientes.</p>
+        <img src="https://via.placeholder.com/800x400" alt="Imagem sobre nós">
+    </section>
+
+    <!-- Seção Serviços -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="service-item">
+                <img src="/site/img/download (7).jpg" alt="Equipe vendendo um carro para cliente">
+                <h3>Venda de Carros</h3>
+                <p>Equipe especializada ajudando você a escolher o melhor carro.</p>
+            </div>
+            <div class="service-item">
+                <img src="/site/img/kkk.jpg" alt="Carro batido">
+                <h3>Seguros</h3>
+                <p>Proteção completa para seu carro em qualquer situação.</p>
+            </div>
+            <div class="service-item">
+                <img src="/site/img/download.jpg" alt="Financiamento de carro">
+                <h3>Financiamento</h3>
+                <p>Facilitamos a compra do seu carro dos sonhos.</p>
+            </div>
+            <div class="service-item">
+                <img src="/site/img/l.jpg" alt="Homem feliz saindo com carro novo">
+                <h3>Cliente Satisfeito</h3>
+                <p>A felicidade de sair dirigindo o carro perfeito.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+        <ul class="social-media">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+
